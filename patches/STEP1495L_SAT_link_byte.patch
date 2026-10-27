@@ -1,0 +1,11 @@
+--- a/core/cart_hw/punchium.h
++++ b/core/cart_hw/punchium.h
+@@ -1595,7 +1595,7 @@
+ 		memset(punchium_s.exps_ram, 0, 8);
+ 	}
+ 	else if( count <= 80 ) {
+-		punchium_s.ram[0xB02 + (count-1)*8] = 0;
++		punchium_s.ram[0xB03 + (count-1)*8] = 0;
+
+ 		if( count <= 14 )
+ 			punchium_s.exps_ram[2 + (count-1)*8] = 0;

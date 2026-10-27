@@ -1,0 +1,26 @@
+--- STEP1495L/punchium.h
++++ STEP1495X/punchium.h
+@@ -851,9 +851,9 @@
+ 			if( voice->loop ) {
+ 				uint8 *sfx = punchium_sfx_ptr + cart.rom;
+ 
+ 				voice->ptr = (*(uint16 *)(sfx + voice->num*8) << 16) | (*(uint16 *)(sfx + voice->num*8 + 2));
+-				voice->size = (*(uint8 *)(sfx + voice->num*8 + 4) << 16) | (*(uint16 *)(sfx + voice->num*8 + 6));
++				voice->size = (*(uint8 *)(sfx + voice->num*8 + 5) << 16) | (*(uint16 *)(sfx + voice->num*8 + 6));
+ 			}
+ 		}
+ 	}
+ 
+@@ -2277,10 +2277,10 @@
+ 	}
+ #endif
+ 
+ 	ptr = (*(uint16_t *)(sfx + data*8) << 16) | (*(uint16_t *)(sfx + data*8 + 2));
+-	size = (*(uint8_t *)(sfx + data*8 + 4) << 16) | (*(uint16_t *)(sfx + data*8 + 6));
+-	type = *(uint8_t *)(sfx + data*8 + 5);
++	size = (*(uint8_t *)(sfx + data*8 + 5) << 16) | (*(uint16_t *)(sfx + data*8 + 6));
++	type = *(uint8_t *)(sfx + data*8 + 4);
+ 
+ #if DEBUG_MODE
+ 	snprintf(error_str, sizeof(error_str), "%X %X | %X %X %X | %X %X %X\n",
+ 		punchium_sfx_ptr + data*8, punchium_sfx_ptr + ptr,

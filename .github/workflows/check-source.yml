@@ -1,0 +1,12 @@
+name: Verify Paprium PS3 STEP1495X source
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify final source and both fixes
+        run: python3 scripts/verify_source.py

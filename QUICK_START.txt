@@ -1,0 +1,12 @@
+PAPRIUM PS3 STEP1495X — COMPLETE SOURCE CHECKOUT
+PS3 port project lead / maintainer: DeepDarkDaddy
+
+1. Read README.md, BUILDING.md and REQUIRED_SOFTWARE.md.
+2. Run: python scripts/verify_source.py
+3. Install PS3DEV/PSL1GHT, GNU make, Python, and a compatible toolchain.
+4. To attempt the static library build: python scripts/build_static_core.py
+5. PS3 SELF linking still requires compatible RetroArch/strict ELF repair inputs.
+6. To publish the complete source ZIP, use scripts/create_publication_zip.py.
+
+Contains the STEP1495L graphics fix and STEP1495X PCM audio fix.
+No ROMs, game audio, SDK binaries, installed SELF, or user data included.

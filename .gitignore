@@ -1,0 +1,28 @@
+# Local build/export outputs
+dist/
+build/
+local-build-support/
+*.elf
+*.self
+*.SELF
+*.pkg
+*.PKG
+*.a
+*.o
+*.d
+*.map
+*.log
+*.zip
+# do not distribute content/firmware
+*.vb
+*.bin
+*.cue
+*.iso
+*.chd
+*.rom
+*.sfc
+*.sav
+*.srm
+*.state*
+__pycache__/
+.DS_Store
